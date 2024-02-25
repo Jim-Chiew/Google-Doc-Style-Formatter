@@ -28,9 +28,9 @@ Select text to be format and hit format code:
 ![image](resource/Screenshot%20(269).png)
 
 Default values are:
-FONT_FAMILY = "Roboto Mono;500";
-FONT_SIZE = 8;
-FOREGROUND_COLOR = "#990000";
+FONT_FAMILY = "Roboto Mono;500";  
+FONT_SIZE = 8;  
+FOREGROUND_COLOR = "#990000";  
 
 ## Setting format attributes:
 highlight or select text to get style properties from and click set format:
@@ -48,11 +48,11 @@ select text to format and hit format code:
 
 
 ---
-https://developers.google.com/apps-script/guides/menus
-https://developers.google.com/apps-script/reference/document/document#getselection
-https://developers.google.com/apps-script/reference/document/range
-https://developers.google.com/apps-script/reference/document/text#setattributesattributes
-https://developers.google.com/apps-script/reference/document/position#getSurroundingText()
-https://developers.google.com/apps-script/reference/document/text
-https://developers.google.com/apps-script/guides/properties
-https://developers.google.com/apps-script/reference/properties
+https://developers.google.com/apps-script/guides/menus  
+https://developers.google.com/apps-script/reference/document/document#getselection  
+https://developers.google.com/apps-script/reference/document/range  
+https://developers.google.com/apps-script/reference/document/text#setattributesattributes  
+https://developers.google.com/apps-script/reference/document/position#getSurroundingText()  
+https://developers.google.com/apps-script/reference/document/text  
+https://developers.google.com/apps-script/guides/properties  
+https://developers.google.com/apps-script/reference/properties  
