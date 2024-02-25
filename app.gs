@@ -1,5 +1,5 @@
 //persistant storing of attributes settings
-const documentProperties = PropertiesService.getDocumentProperties();
+const styleProperties = PropertiesService.getDocumentProperties();
 
 
 function onOpen() {
@@ -13,8 +13,8 @@ function onOpen() {
 
 let style = {};
 // check if document property is already set
-if (Object.keys(documentProperties.getProperties()).length != 0){
-  style = documentProperties.getProperties();
+if (Object.keys(styleProperties.getProperties()).length != 0){
+  style = styleProperties.getProperties();
 } else {
   // Define default code styling
   style[DocumentApp.Attribute.FONT_FAMILY] = "Roboto Mono;500";
@@ -83,11 +83,11 @@ function prompt(inferred_text, attribute, attribute_format, prompt_title, prompt
 
     // if value is not set delete propertie.
     if (response_value === "" || prompt.getSelectedButton() === ui.Button.CANCEL){
-      documentProperties.deleteProperty(attribute);
+      styleProperties.deleteProperty(attribute);
     } else {
-      documentProperties.setProperty(attribute, attribute_format(response_value));
+      styleProperties.setProperty(attribute, attribute_format(response_value));
     }
   } else {
-    documentProperties.setProperty(attribute, inferred_text[attribute]);
+    styleProperties.setProperty(attribute, inferred_text[attribute]);
   }
 }
